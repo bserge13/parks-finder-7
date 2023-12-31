@@ -1,0 +1,10 @@
+<h2> Results for Parks Search in <%= @state %> </h2>
+
+<section id='park'>
+  <% @parks.each do |park| %>
+    <p><h3><%= park.park_name %></h3>
+    <p><%= park.description %>
+    <p> Directions: <%= park.directions %>
+    <p>Hours: <%= park.hours %>
+  <% end %>
+</section>
